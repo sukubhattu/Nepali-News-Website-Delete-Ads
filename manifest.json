@@ -1,5 +1,6 @@
 {
   "name": "Image Ads Remover",
+  "description":"This extension removes image ads from Nepali news website",
   "version": "1.0.0",
   "manifest_version": 2,
   "run_at": "document_idle",

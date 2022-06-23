@@ -1,0 +1,12 @@
+{
+  "name": "Image Ads Remover",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "run_at": "document_idle",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./js/axios.js","./js/content.js"]
+    }
+  ]
+}

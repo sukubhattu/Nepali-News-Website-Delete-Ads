@@ -20,7 +20,11 @@ class RemoveAds {
 	}
 	removeAds() {
 		for (let ads in this.class_array) {
-			document.querySelectorAll(`.${this.class_array[ads]}`).forEach((ad) => ad.remove());
+			try {
+				document.querySelectorAll(`.${this.class_array[ads]}`).forEach((ad) => ad.remove());
+			} catch (e) {
+				console.log(e);
+			}
 		}
 	}
 }
